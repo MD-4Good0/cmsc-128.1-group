@@ -1,0 +1,61 @@
+.mt-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mt-welcome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100vw; /* Width scales with the viewport width */
+    max-width: 88%; /* Maximum width to prevent it from getting too wide */
+    margin: auto; /* Vertical margin scales with the viewport height */
+    margin-top: 3%; /* Top margin is a percentage of the viewport height */
+    padding: 3vw; /* Padding scales with the viewport width */
+    background: #fff;
+    border-radius: 25px; /* Border-radius is fixed */
+    gap: clamp(0rem, 15vw, 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-shadow is fixed */
+}
+
+.mt-welcome-container img{
+    width: clamp(10rem, 15vw, 2000px); /* Default size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.mt-welcome-text{
+    color: #18694e;
+    font-size: clamp(1.5rem, 2vw, 30px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+}
+
+.mt-choice{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #4d4d4d6c;
+    font-size: clamp(1rem, 2vw, 20px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+}
+
+.mt-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.mt-view-p-t-r-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100vw; /* Width scales with the viewport width */
+    max-width: 8%; /* Maximum width to prevent it from getting too wide */
+    margin: auto; /* Vertical margin scales with the viewport height */
+    margin-top: 3%; /* Top margin is a percentage of the viewport height */
+    padding: 3vw; /* Padding scales with the viewport width */
+    background: #fff;
+    border-radius: 25px; /* Border-radius is fixed */
+    gap: clamp(0rem, 15vw, 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-shadow is fixed */
+}

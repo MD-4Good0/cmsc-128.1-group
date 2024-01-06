@@ -1,0 +1,118 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;   
+    width: clamp(30rem, 10vw, 520px);
+    background: #fff;
+    padding-bottom: 30px;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.logo img{
+    width: 270px;
+}
+.em-pass{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.input input{
+    height: 50px;
+    width: 500px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 15px;
+    opacity: 50%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif; 
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 370px;
+    height: 70px;
+    background: #edf0f6;
+    border-radius: 5px;
+}
+
+.input input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+.eyecon {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 45px;
+    width: 45px;
+}
+
+.eyecon button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.eyecon button:hover{
+    border-radius: 100px;
+    background: #cacaca64;
+}
+
+.eyecon img{
+    margin-top: 5%;
+    width: 40px;
+}
+
+.login-button{
+    margin: 40px auto 25px;
+}
+
+.login-button button{
+    border: none;
+}
+
+.login-button button:hover{
+    display: flex;
+    background-color: #ffffff;
+    border: 2px solid #18694e;
+    border-radius: 50px;
+    color: #18694e;
+}
+
+.login-button-text{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 260px;
+    height: 70px;
+    color: #fff;
+    background: #18694e;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}

@@ -1,0 +1,202 @@
+.lc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Center items horizontally */
+    width: 90vw; /* Width scales with the viewport width */
+    max-width: 10000px; /* Maximum width to prevent it from getting too wide */
+    margin: auto; /* Vertical margin scales with the viewport height */
+    margin-top: 3%; /* Top margin is a percentage of the viewport height */
+    padding: 3vw; /* Padding scales with the viewport width */
+    background: #fff;
+    border-radius: 25px; /* Border-radius is fixed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-shadow is fixed */
+}
+
+.lc-label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto; 
+    height: auto; 
+    margin: auto;
+    gap: 25px; /* Spacing between items can be fixed */
+}
+
+.lc-ITR{
+    color: #18694e;
+    font-size: clamp(1.5rem, 2vw, 40px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.lc-label img {
+    width: clamp(1.5rem, 15vw, 200px); /* Default size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.lc-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.lc-r-a-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the left */
+    margin-top: clamp(2.5rem, 4vw, 20px); /* Fixed top margin */
+    padding: 2vw; /* Responsive padding that scales with the viewport width */
+    border: 2px solid #ccc; /* Fixed border width */
+    border-radius: 20px; /* Fixed border-radius */
+    max-width: 500px; /* Fixed max-width */
+    width: 25%; /* Ensure it scales down with its parent container */
+    height: 100%;
+    background: #fff; /* Fixed background color */
+}
+
+.lc-r-a-p img {
+    display: flex;
+    width: clamp(1.8rem, 4vw, 70px); /* Adjust width to match the size of the slider image */
+    height: 100%; /* Maintain aspect ratio */
+    align-self: center; /* Center it within its flex container */
+    margin-top: 10%;
+}
+
+.r-a-p-title {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    width: auto; /* Changed from 105% to auto to prevent overflow */
+
+    font-weight: bolder;
+    font-size: clamp(0.6rem, 1.7vw, 35px); /* Responsive font size between 1.25rem and 30px */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #18694e;
+}
+
+.lc-r-a-p-below{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.lc-r-a-p-texts{
+    margin-top: -2%;
+}
+
+.r-a-p {
+    font-size: clamp(0.5rem, 2vw, 30px); /* Responsive font size */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #18694e;
+
+    margin: auto;
+    margin-top: clamp(0rem, 1vw, 35px);
+    padding-left: 2vw; /* Responsive padding that scales with the viewport width */
+}
+
+.lc-separator{
+    align-items: center; /* This will vertically center the children */
+    justify-content: start;
+    display: flex;
+    align-items: center; /* Centers the img vertically */
+    justify-content: center; /* Centers the img horizontally */
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.lc-separator img{
+    height: 80%;
+    width: clamp(3rem, 4vw, 50px);
+    padding-top: clamp(2.5rem, 3vw, 70px);
+}
+
+/* Main column layout adjustments */
+.lc-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(2.5rem, 4vw, 20px); /* Provide space at the top */
+    margin-right: 1%;
+    width: 70%; /* Set width relative to the parent element */
+    gap: clamp(1.4rem, 4vw, 40px);
+}
+
+/* Button style adjustments */
+.lc-new-c-p-r-button {
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Optional: Set a specific height if needed */
+    cursor: pointer; /* Cursor to pointer to indicate clickable */
+    border: 2px solid #ccc; /* Adjust border width and color */
+    padding: 5px 0 5px 0;
+    border-radius: 50px;
+}
+
+.lc-new-c-p-r-text {
+    color: #18694e;
+    font-size: clamp(0rem, 2vw, 30px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.lc-add-t-e-p-r-container {
+    display: flex; /* Use flexbox to center the content */
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Optional: Set a specific height if needed */
+    border: 2px solid #ccc; /* Adjust border width and color */
+    padding: 20px 0; /* Adjust padding as necessary */
+    border-radius: 30px; /* Rounded corners */
+}
+
+.lc-add-t-e-p-r-text{
+    color: #18694e;
+    font-size: clamp(0rem, 2vw, 30px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.lc-search{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 60px;
+    background: #edf5f3;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lc-search input{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: clamp(0rem, 2vw, 20px);
+    padding-left: 40px;
+    padding-right: 18px;
+    opacity: 50%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif; 
+}
+
+.lc-search-button {
+    padding-top: 7px;
+    padding-right: 27px;
+    opacity: 50%;
+}
+
+.lc-search-button img{
+    width: clamp(2rem, 4vw, 50px);;
+}
+
+.lc-search-button span{
+    cursor: pointer;
+}

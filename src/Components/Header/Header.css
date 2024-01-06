@@ -1,0 +1,184 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffff;
+    padding-top: 6PX;
+    padding-bottom: 6px;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+.left-stuff{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.right-stuff{
+    padding-right: 54px;
+    display: flex;
+    align-items: center;
+}
+
+.title-lo-move{
+    padding-left: 92px;
+}
+
+.title-short, .title-short-lo {
+    display: none; /* Both logo and title-short are initially hidden */
+    /* Set other necessary styles, if you have any for these classes */
+}
+
+@media screen and (max-width: 645px) {
+    .title, .title-lo {
+        display: none; /* Hide the full title on small screens */
+    }
+
+    .title-short, .title-short-lo {
+        display: inline-flex; /* Show logo and short title on small screens */
+        align-items: center; /* Center items vertically */
+    }
+}
+
+.title, .title-short{
+    height: auto;
+    width: auto;
+    color: #18694e;
+    font-size: 25px;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.title-lo, .title-short-lo{
+    height: auto;
+    width: auto;
+    color: #727272a2;
+    font-size: 25px;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    cursor: context-menu;
+}
+
+.titulo button{
+    border: none;
+    background: none;
+    padding: 10px;
+}
+
+.titulo button:hover{
+    border-radius: 10px;
+    background: #cacaca64;
+}
+
+.home{
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.home img{
+    width: 40px;
+}
+
+.navhome button {
+    border: none;
+    background: none;
+}
+
+.navhome button:hover {
+    border-radius: 10px;
+    background: #cacaca64;
+}
+
+.home-lo{
+    padding-top: 5px;
+    padding-right: 60px;
+    text-align: center;
+}
+
+.home-lo img{
+    width: 40px;
+    opacity: 60%
+}
+
+.logout-button{
+    display: flex;
+    background-color: #18694e; /* Green */
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    float: right;
+    margin-left: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.logout-button-text{
+    font-size: 15px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.l-o button:hover {
+    display: flex;
+    background-color: #ffffff; /* Green */
+    border: 2px solid #18694e;
+    border-radius: 50px;
+    color: #18694e;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.back {
+    padding-right: 10px;
+}
+
+.back img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.back button {
+    border: none;
+    background: none;
+}
+
+.back button:hover {
+    border-radius: 100px;
+    background: #cacaca64;
+}
+
+.forward {
+    padding-left: 10px;
+}
+
+.forward img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.forward button {
+    border: none;
+    background: none;
+}
+
+.forward button:hover {
+    border-radius: 100px;
+    background: #cacaca64;
+}

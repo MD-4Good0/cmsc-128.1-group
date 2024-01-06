@@ -1,0 +1,193 @@
+.dn-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3.8%;
+    justify-content: center;
+    align-items: center;   
+    width: 90%;
+    background: #fff;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dn-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: clamp(1.5rem, 2vw, 50px);
+    margin-bottom: clamp(1.5rem, 2vw, 30px);
+
+    gap: clamp(1rem, 1vw, 10px);
+
+    color: #18694e;
+    font-size: clamp(1.5rem, 2vw, 30px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.dn-logo img{
+    width: clamp(10rem, 10vw, 235px);
+}
+
+.dn-search{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: clamp(24rem, 50vw, 10000px);
+    height: clamp(3rem, 5vw, 60px);
+    background: #edf5f3;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dn-search input{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 15px;
+    opacity: 50%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+       'Lucida Sans', Arial, sans-serif; 
+}
+
+.dn-search-button {
+    padding-top: 3px;
+    padding-right: 20px;
+    opacity: 70%;
+}
+
+.dn-search-button button{
+    cursor: pointer;
+
+    border: none;
+    background: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.dn-search-button button:hover{
+    border-radius: 100px;
+    background: #cacaca64;
+}
+
+.dn-patients{
+    width: 90%;
+    background: #edf5f3;
+    border-radius: 40px;
+    margin-top: clamp(2rem, 2.5vw, 100px);
+    margin-bottom: 1.7%;
+}
+
+.dn-patients-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc; 
+    border-radius: 40px;
+    background-color: #ffffff; 
+    padding: 5px 5px 5px 5px; 
+    max-width: 100%; 
+    margin: auto;
+}
+  
+.dn-p-h {
+    width: 1000px;
+    text-align: center;
+    padding: 10px; 
+    font-size: auto;
+    font-size: clamp(0rem, 2vw, 20px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    color: #18694e;
+}
+
+.dn-p-h-separator {
+    text-align: center;
+    opacity: 25%;
+    font-size: clamp(1.5rem, 0vw, 30px);
+    padding-bottom: 0.5%;
+    cursor: context-menu;
+}
+
+.dn-patients-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.dn-patients-table-container {
+    max-height: 300px;
+    overflow: auto;
+    position: relative;
+    background-color: #edf5f3;
+    border-radius: 13px;
+    padding-left: 5.5px;
+}
+
+.add-padding {
+    padding-right: 5.5px;
+}
+
+.dn-patients-table-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dn-patients-table-container::-webkit-scrollbar-thumb {
+    background: #c4c4c4; 
+    border-radius: 5px;
+}
+
+.dn-patients-table-container::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e; 
+}
+
+.dn-patients-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px; 
+    max-width: 100%; 
+}
+
+.dn-patients-table button {
+    border: none;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+}
+
+.dn-patients-table button:hover {
+    border: none;
+    background: #cae3dd;
+    cursor: pointer;
+}
+
+.dn-p-r-cell {
+    width: 1000px;
+    text-align: center;
+    padding: 0 0px 0 0px;
+    margin: 0 1% 0 1%;  
+    font-size: clamp(0rem, 2vw, 21px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    color: #838383;
+    border: none;
+    background: none;
+}
+
+.dn-tagline {
+    display: flex;
+    
+    opacity: 30%;
+    font-weight: bold;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+}
